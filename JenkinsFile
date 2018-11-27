@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Build') {
         steps {
-          awsCodeBuild projectName: 'Reinvent2018',
+          awsCodeBuild projectName: 'reinvent-jenkins-session',
                        credentialsId: 'reinvent2018',
                        credentialsType: 'jenkins',
                        region: 'us-east-1',
